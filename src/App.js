@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ShowDetail from './ShowDetail';
 import './App.css';
 
 function App() {
@@ -7,10 +8,11 @@ function App() {
     fetch("https://api.tvmaze.com/shows?page=1")
       .then(response => response.json())
       .then(data => setShows(data));
-  })
+  }, [])
   return (
     <div className="App">
       <h1>Look at these TV shows!</h1>
+      {shows.map(show => <ShowDetail show={show} />)}
     </div>
   );
 }
