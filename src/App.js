@@ -7,7 +7,7 @@ function App() {
     fetch("https://api.tvmaze.com/shows?page=1")
       .then(response => response.json())
       .then(data => setShows(data));
-  })
+  }, [])
   return (
     <div className="App">
       <h1>Look at these TV shows!</h1>
