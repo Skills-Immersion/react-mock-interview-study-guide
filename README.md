@@ -5,5 +5,5 @@ For this interview, please explain what the existing code is doing, then add the
 1. The TV shows fetched from the API should be displayed on the screen.
     1. Each TV show should display its title and the medium-sized image.
     1. The title should be in an h3 with a class of `title`.
-2. When the user clicks on the image of a show, its type and status should also be displayed.
+2. When the user clicks on the image of a show, its type and status should also be displayed. (Note: there is no test for this feature.)
 3. When the user clicks on the title of a show, a request should be made to `https://api.tvmaze.com/shows/:id/akas` to get the alternate names of the show, and those alternate names and their countries should be displayed inline on the same page.
